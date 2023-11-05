@@ -1,2 +1,17 @@
 @import "fonts";
 @import "var";
+
+.signup {
+  &__form {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    &__h2 {
+      text-align: center;
+    }
+    &__inp {
+    }
+  }
+}
