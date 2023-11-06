@@ -62,19 +62,56 @@
 
 /* скрываем реальный чекбокс */
 .signup__checkbox-real {
-  display: none;
+  // width: 0;
+  // height: 0;
+  // opacity: 0;
+  // position: absolute;
+  // z-index: -1;
+}
+
+// чекбокс в моменте выбора
+.signup__checkbox-real:focus + .signup__checkbox-custom {
+  box-shadow: 0px 0px 0px 1px #fea501, 0px 0px 10px #fea501;
 }
 
 /* стилизуем новый чекбокс */
 .signup__checkbox-custom {
+  position: relative;
   width: 20px;
   height: 20px;
-  margin: 0 12px;
+  // margin: 0 12px;
   display: inline-block;
-  background-color: #fff;
+  background-color: #fea501;
   border: 2px solid #6f6f6f;
   border-radius: 5px;
   vertical-align: middle;
+}
+
+.signup__checkbox-custom::before {
+  content: "";
+
+  //стилизуем галочку
+  display: inline-block;
+  width: 14px;
+  height: 11px;
+  background-image: url("../../assets/icons/check-wt.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  /* Выравниваем галочку по центру */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0); //уменьшение галки до размера 0
+
+  transition: 0.2s ease-in; //плавное увеличение галки
+}
+
+/* Активируем декоративный чекбокс */
+
+.signup__checkbox-real:checked + .signup__checkbox-custom::before {
+  // background-color: #fea501;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .signup__checkbox-label {
