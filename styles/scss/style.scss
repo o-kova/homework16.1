@@ -2,12 +2,12 @@
 @import "var";
 
 main {
-  width: 1024px;
+  // width: 1024px;
   display: flex;
   // justify-content: center;
 }
 
-.account {
+.signup {
   width: 500px;
   height: 500px;
   // padding: 5%;
@@ -52,7 +52,7 @@ main {
   }
 }
 
-.account__h2 {
+.signup__h2 {
   color: #000;
   font-family: "Montserrat";
   font-size: 1.25rem;
@@ -61,7 +61,7 @@ main {
   line-height: 1.25rem;
 }
 
-.account__inp {
+.signup__inp {
   padding: 10px;
   margin: 10px 0;
   border-radius: 0.625rem;
@@ -72,12 +72,13 @@ main {
   line-height: 1.25rem;
 }
 
-.account__button {
+.signup__button {
   padding: 10px;
   border-radius: 0.625rem;
   border: 2px solid #000;
   background-color: #fff;
   color: #000;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.25);
   font-family: "Montserrat";
   font-size: 1rem;
   font-style: normal;
