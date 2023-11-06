@@ -3,13 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Registration form</title>
     <link rel="stylesheet" href="styles/css/normalize.css" />
     <link rel="stylesheet" href="styles/css/style.css" />
   </head>
   <body>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="signup">
+        <form class="signup__form" name="form1">
+          <h2 class="signup__h2">Sign up</h2>
+          <div class="signup__inps">
+            <input
+              type="text"
+              name="name"
+              placeholder="Username"
+              class="signup__inp"
+            />
+            <input
+              type="text"
+              name="email"
+              placeholder="Email"
+              class="signup__inp"
+            />
+            <input
+              type=""
+              name="pass"
+              placeholder="Password"
+              class="signup__inp"
+            />
+            <input
+              type=""
+              name="confirm-pass"
+              placeholder="Confirm password"
+              class="signup__inp"
+            />
+          </div>
+          <button class="signup__button">Sign up</button>
+        </form>
+      </div>
+    </main>
     <script src="scripts/index.js"></script>
   </body>
 </html>
