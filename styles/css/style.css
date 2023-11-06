@@ -1,10 +1,11 @@
+@charset "UTF-8";
 .signup {
   width: 500px;
   height: 500px;
   margin: 10%;
 }
 .signup__form {
-  padding: 10%;
+  padding: 30px 40px;
   border-radius: 1.25rem;
   border: 6px solid #fea501;
   box-shadow: 0px 0px 52px 25px #2c2c2c;
@@ -21,14 +22,15 @@
   color: #000;
   font-family: "Montserrat";
   font-size: 1.25rem;
-  font-style: normal;
   font-weight: 600;
   line-height: 1.25rem;
 }
 
 .signup__inp {
-  padding: 10px;
-  margin: 10px 0;
+  width: 380px;
+  height: 20px;
+  padding: 10px 18px;
+  margin: 15px 0;
   border-radius: 0.625rem;
   border: 2px solid #000;
   font-family: "Montserrat";
@@ -38,8 +40,8 @@
 }
 
 .signup__button {
-  padding: 0.62rem 0.94rem;
-  margin: 1.87rem 0;
+  padding: 10px;
+  margin-top: 30px;
   border-radius: 0.625rem;
   border: 2px solid #000;
   background-color: #fff;
@@ -50,6 +52,10 @@
   font-weight: 600;
   line-height: 1.25rem;
   text-transform: uppercase;
+}
+
+.signup__checkbox-real {
+  display: none; /* скрываем дефолтный чекбокс */
 }
 
 .signup__checkbox-label {
