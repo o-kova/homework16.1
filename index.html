@@ -6,39 +6,72 @@
     <title>Registration form</title>
     <link rel="stylesheet" href="styles/css/normalize.css" />
     <link rel="stylesheet" href="styles/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
       <div class="signup">
-        <form class="signup__form" name="form1">
+        <form class="signup__form" name="form1" action="#" method="POST">
           <h2 class="signup__h2">Sign up</h2>
           <div class="signup__inps">
             <input
               type="text"
               name="name"
-              placeholder="Username"
+              placeholder="Login"
               class="signup__inp"
+              minlength="8"
+              required
             />
             <input
-              type="text"
+              type="email"
               name="email"
-              placeholder="Email"
+              placeholder="E-mail"
               class="signup__inp"
+              required
             />
             <input
-              type=""
+              type="password"
               name="pass"
               placeholder="Password"
               class="signup__inp"
+              minlength="6"
+              maxlength="20"
+              required
             />
             <input
-              type=""
+              type="password"
               name="confirm-pass"
               placeholder="Confirm password"
               class="signup__inp"
+              minlength="6"
+              maxlength="20"
+              required
             />
           </div>
-          <button class="signup__button">Sign up</button>
+          <div class="signup__checkbox">
+            <label class="signup__checkbox-label" for="checkbox_1">
+              <input type="checkbox" class="signup__checkbox-real" />
+              <span class="signup__checkbox-custom"></span>
+              By signing up, you agree with
+              <a
+                href="https://www.flickr.com/help/terms"
+                class="signup__checkbox-a"
+                >Terms of Services</a
+              >
+              and
+              <a
+                href="https://www.flickr.com/help/privacy"
+                class="signup__checkbox-a"
+                >Privacy Policy.</a
+              ></label
+            >
+          </div>
+          <button type="button" class="signup__button">Sign up</button>
         </form>
       </div>
     </main>
