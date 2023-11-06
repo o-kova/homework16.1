@@ -60,26 +60,34 @@
   padding-top: 15px;
 }
 
+/* скрываем реальный чекбокс */
 .signup__checkbox-real {
-  display: none; /* скрываем дефолтный чекбокс */
+  display: none;
 }
 
+/* стилизуем новый чекбокс */
 .signup__checkbox-custom {
-  display: inline-block;
   width: 20px;
   height: 20px;
+  margin: 0 12px;
+  display: inline-block;
   background-color: #fff;
   border: 2px solid #6f6f6f;
   border-radius: 5px;
-  margin-right: 5px;
+  vertical-align: middle;
 }
 
 .signup__checkbox-label {
+  //подвинуть конец текста вправо у чекбокса
+  display: block;
+  padding-left: 42px;
+  text-indent: -54px;
+
   color: #6f6f6f;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  // line-height: 20px;
 }
 
 .signup__checkbox-a {
