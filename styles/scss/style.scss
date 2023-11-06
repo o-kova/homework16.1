@@ -7,7 +7,7 @@
   margin: 10%;
 
   &__form {
-    padding: 30px 40px;
+    padding: 25px 40px;
     border-radius: 20px;
     border: 6px solid #fea501;
     box-shadow: 0px 0px 52px 25px #2c2c2c;
@@ -19,6 +19,8 @@
 }
 
 .signup__h2 {
+  padding: 0;
+  margin: 0;
   color: #000;
   font-family: "Montserrat";
   font-size: 20px;
@@ -41,7 +43,7 @@
 
 .signup__button {
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 25px;
   border-radius: 10px;
   border: 2px solid #000;
   background-color: #fff;
@@ -52,6 +54,10 @@
   font-weight: 600;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.signup__checkbox {
+  padding-top: 15px;
 }
 
 .signup__checkbox-real {
@@ -65,10 +71,10 @@
   background-color: #fff;
   border: 2px solid #6f6f6f;
   border-radius: 5px;
+  margin-right: 5px;
 }
 
 .signup__checkbox-label {
-  padding: 15px 0 0 0;
   color: #6f6f6f;
   font-family: "Montserrat";
   font-size: 16px;
