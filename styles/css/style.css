@@ -3,12 +3,13 @@ main {
   display: flex;
 }
 
-.signup {
-  width: 300px;
+.account {
+  width: 500px;
+  height: 500px;
   margin: 10%;
   display: flex;
 }
-.signup__form {
+.account__form {
   padding: 10%;
   border-radius: 1.25rem;
   border: 6px solid #fea501;
@@ -18,7 +19,7 @@ main {
   justify-items: center;
   align-items: center;
 }
-.signup__h2 {
+.account__h2 {
   color: #000;
   font-family: "Montserrat";
   font-size: 1.25rem;
@@ -27,7 +28,7 @@ main {
   line-height: 1.25rem;
 }
 
-.signup__inp {
+.account__inp {
   padding: 10px;
   margin: 10px 0;
   border-radius: 0.625rem;
@@ -38,7 +39,7 @@ main {
   line-height: 1.25rem;
 }
 
-.signup__button {
+.account__button {
   padding: 10px;
   border-radius: 0.625rem;
   border: 2px solid #000;
