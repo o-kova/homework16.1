@@ -16,7 +16,7 @@
   <body>
     <main>
       <div class="signup">
-        <form class="signup__form" name="form1" action="" method="POST">
+        <form class="signup__form" name="form1" action="#" method="POST">
           <h2 class="signup__h2">Sign up</h2>
           <div class="signup__inps">
             <input
@@ -24,24 +24,32 @@
               name="name"
               placeholder="Username"
               class="signup__inp"
+              required
             />
             <input
               type="email"
               name="email"
               placeholder="Email"
               class="signup__inp"
+              required
             />
             <input
               type="password"
               name="pass"
               placeholder="Password"
               class="signup__inp"
+              minlength="8"
+              maxlength="20"
+              required
             />
             <input
               type="password"
               name="confirm-pass"
               placeholder="Confirm password"
               class="signup__inp"
+              minlength="8"
+              maxlength="20"
+              required
             />
           </div>
           <button type="button" class="signup__button">Sign up</button>
