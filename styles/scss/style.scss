@@ -1,12 +1,6 @@
 @import "fonts";
 @import "var";
 
-main {
-  // width: 1024px;
-  // display: flex;
-  // justify-content: center;
-}
-
 .signup {
   width: 500px;
   height: 500px;
@@ -14,41 +8,22 @@ main {
 
   &__form {
     padding: 30px 40px;
-    border-radius: 1.25rem;
+    border-radius: 20px;
     border: 6px solid #fea501;
     box-shadow: 0px 0px 52px 25px #2c2c2c;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
-
-    &__h2 {
-    }
-
-    &__inps {
-      &__inp {
-      }
-    }
-
-    &__agree {
-      display: flex;
-      flex-direction: row;
-    }
-
-    &__button {
-      // border-radius: 0.625rem;
-      // border: 2px solid #000;
-      // background-color: #fff;
-    }
   }
 }
 
 .signup__h2 {
   color: #000;
   font-family: "Montserrat";
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 1.25rem;
+  line-height: 20px;
 }
 
 .signup__inp {
@@ -56,26 +31,26 @@ main {
   height: 20px;
   padding: 10px 18px;
   margin: 15px 0;
-  border-radius: 0.625rem;
+  border-radius: 10px;
   border: 2px solid #000;
   font-family: "Montserrat";
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.25rem;
+  line-height: 20px;
 }
 
 .signup__button {
   padding: 10px;
   margin-top: 30px;
-  border-radius: 0.625rem;
+  border-radius: 10px;
   border: 2px solid #000;
   background-color: #fff;
   color: #000;
   box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.25);
   font-family: "Montserrat";
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 1.25rem;
+  line-height: 20px;
   text-transform: uppercase;
 }
 
@@ -84,21 +59,28 @@ main {
 }
 
 .signup__checkbox-custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 2px solid #6f6f6f;
+  border-radius: 5px;
 }
 
 .signup__checkbox-label {
+  padding: 15px 0 0 0;
   color: #6f6f6f;
   font-family: "Montserrat";
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.25rem;
+  line-height: 20px;
 }
 
 .signup__checkbox-a {
   color: #6f6f6f;
   font-family: "Montserrat";
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.25rem;
+  line-height: 20px;
   text-decoration-line: underline;
 }
