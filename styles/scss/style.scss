@@ -44,6 +44,11 @@ main {
       }
     }
 
+    &__agree {
+      display: flex;
+      flex-direction: row;
+    }
+
     &__button {
       // border-radius: 0.625rem;
       // border: 2px solid #000;
@@ -85,4 +90,21 @@ main {
   font-weight: 600;
   line-height: 1.25rem;
   text-transform: uppercase;
+}
+
+.signup__checkbox-label {
+  color: #6f6f6f;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.signup__checkbox-a {
+  color: #6f6f6f;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-decoration-line: underline;
 }

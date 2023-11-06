@@ -18,6 +18,10 @@ main {
   justify-items: center;
   align-items: center;
 }
+.signup__form__agree {
+  display: flex;
+  flex-direction: row;
+}
 .signup__h2 {
   color: #000;
   font-family: "Montserrat";
@@ -51,4 +55,21 @@ main {
   font-weight: 600;
   line-height: 1.25rem;
   text-transform: uppercase;
+}
+
+.signup__checkbox-label {
+  color: #6f6f6f;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.signup__checkbox-a {
+  color: #6f6f6f;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-decoration-line: underline;
 }/*# sourceMappingURL=style.css.map */
