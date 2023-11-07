@@ -31,6 +31,11 @@
   z-index: 0;
 }
 
+#signUp,
+#signupOverlay {
+  display: none;
+}
+
 .signup {
   position: relative;
   z-index: 2;

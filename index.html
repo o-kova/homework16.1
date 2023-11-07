@@ -16,10 +16,12 @@
   <body>
     <main>
       <div class="btn__signup-wrapper">
-        <button class="btn__signup">Sign up!</button>
+        <button class="btn__signup" id="openBtnSignUp" onclick="openSignUp()">
+          Sign up!
+        </button>
       </div>
 
-      <div class="signup">
+      <div class="signup" id="signUp">
         <form class="signup__form" name="form1" action="#" method="POST">
           <h2 class="signup__h2">Sign up</h2>
           <div class="signup__inps">
@@ -73,12 +75,16 @@
             <button type="button" class="signup__btn">Sign up</button>
           </div>
           <div class="signup__btn-close-wrap">
-            <button type="button" class="signup__btn-close"></button>
+            <button
+              type="button"
+              class="signup__btn-close"
+              onclick="closeSignUp()"
+            ></button>
           </div>
         </form>
         <!-- для затемнения фона -->
       </div>
-      <div class="signup__overlay"></div>
+      <div class="signup__overlay" id="signupOverlay"></div>
     </main>
     <script src="scripts/index.js"></script>
   </body>
