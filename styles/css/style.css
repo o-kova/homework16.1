@@ -111,8 +111,8 @@
 
 /* Активируем декоративный чекбокс */
 .signup__checkbox-real:checked + .signup__checkbox-custom::before {
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   border-radius: 5px;
   background-color: #fea501;
   transform: translate(-50%, -50%) scale(1);
