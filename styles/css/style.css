@@ -167,4 +167,18 @@
   font-weight: 400;
   line-height: 20px;
   text-decoration-line: underline;
+}
+
+/* Кнопка закрытия */
+.signup__btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: none;
+  opacity: 0.7;
+}
+
+.signup__btn-close:hover {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
