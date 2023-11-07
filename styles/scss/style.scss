@@ -185,7 +185,7 @@
 .signup__btn-close {
   cursor: pointer;
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 30px;
   border: none;
   background: none;
@@ -194,9 +194,6 @@
 
 .signup__btn-close:hover {
   opacity: 1;
-}
-
-.signup__btn-close {
 }
 
 .signup__btn-close:before,
