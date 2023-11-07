@@ -96,10 +96,9 @@
 .signup__checkbox-custom::before {
   content: "";
   display: inline-block;
-  width: 14px;
-  height: 11px;
   background-image: url("../../assets/icons/check-wt.svg");
-  background-size: contain;
+  background-position: center center;
+  background-size: 14px;
   background-repeat: no-repeat;
   /* Выравниваем галочку по центру */
   position: absolute;
