@@ -183,12 +183,13 @@
 
 /* Кнопка закрытия */
 .signup__btn-close {
+  cursor: pointer;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 30px;
   border: none;
   background: none;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 .signup__btn-close:hover {
@@ -196,10 +197,6 @@
 }
 
 .signup__btn-close {
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 30px;
 }
 
 .signup__btn-close:before,
@@ -207,7 +204,7 @@
   content: "";
   position: absolute;
   width: 20px;
-  height: 4px;
+  height: 2px;
   background-color: #000;
   border-radius: 10px;
 }
