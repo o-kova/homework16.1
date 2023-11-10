@@ -14,7 +14,7 @@ function openSignUp() {
   }
 }
 
-//закрытие окна по крестику
+//закрытие окна по крестику sign up
 
 function closeSignUp() {
   let signupButton = document.getElementById("signUp");
@@ -30,3 +30,51 @@ function closeSignUp() {
     signupBack.style.display = "none";
   }
 }
+
+//вызов окна по кнопке login
+function openLogIn() {
+  let loginButton = document.getElementById("logIn");
+  let loginBack = document.getElementById("signupOverlay");
+  let displayButton = getComputedStyle(loginButton).display;
+  let displayBack = getComputedStyle(loginBack).display;
+
+  if (displayButton == "none") {
+    loginButton.style.display = "block";
+  }
+
+  if (displayBack == "none") {
+    loginBack.style.display = "block";
+  }
+}
+
+//закрытие окна по крестику log in
+
+function closeLogIn() {
+  let loginButton = document.getElementById("logIn");
+  let loginBack = document.getElementById("signupOverlay");
+  let displayButton = getComputedStyle(loginButton).display;
+  let displayBack = getComputedStyle(loginBack).display;
+
+  if (displayButton == "block") {
+    loginButton.style.display = "none";
+  }
+
+  if (displayBack == "block") {
+    loginBack.style.display = "none";
+  }
+}
+
+// function closePopUp() {
+//   let button = document.getElementById("logIn");
+//   let comeBack = document.getElementById("loginOverlay");
+//   let displayButton = getComputedStyle(button).display;
+//   let displayBack = getComputedStyle(comeBack).display;
+
+//   if (displayButton == "block") {
+//     loginButton.style.display = "none";
+//   }
+
+//   if (displayBack == "block") {
+//     loginBack.style.display = "none";
+//   }
+// }

@@ -1,12 +1,18 @@
 @import "fonts";
 @import "var";
 
-.btn__signup-wrapper {
+.btn__set {
   display: flex;
   justify-content: center;
 }
 
-.btn__signup {
+.btn__signup-wrapper,
+.btn__login-wrapper {
+  padding: 5px;
+}
+
+.btn__signup,
+.btn__login {
   width: 100px;
   padding: 10px;
   margin-top: 25px;
@@ -36,7 +42,8 @@
 }
 
 #signUp,
-#signupOverlay {
+#signupOverlay,
+#logIn {
   display: none;
 }
 
@@ -60,7 +67,27 @@
   }
 }
 
-.signup__h2 {
+.login {
+  position: relative;
+  z-index: 2;
+  width: 500px;
+  height: 300px;
+  margin: 50px auto 0;
+  // display: none;
+
+  &__form {
+    padding: 25px 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 6px solid #fea501;
+    box-shadow: 0px 0px 52px 25px #2c2c2c;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.signup__h2,
+.login__h2 {
   padding: 0;
   margin: 0;
   color: #000;
@@ -71,12 +98,14 @@
   text-align: center;
 }
 
-.signup__inps {
+.signup__inps,
+.login__inps {
   width: 420px;
   justify-content: center;
 }
 
-.signup__inp {
+.signup__inp,
+.login__inp {
   width: 380px;
   height: 20px;
   padding: 10px 14px;
@@ -89,12 +118,14 @@
   line-height: 20px;
 }
 
-.signup__btn-wrap {
+.signup__btn-wrap,
+.login__btn-wrap {
   display: flex;
   justify-content: center;
 }
 
-.signup__btn {
+.signup__btn,
+.login__btn {
   width: 100px;
   padding: 10px;
   margin-top: 25px;
@@ -189,7 +220,8 @@
 }
 
 /* Кнопка закрытия */
-.signup__btn-close {
+.signup__btn-close,
+.login__btn-close {
   cursor: pointer;
   position: absolute;
   top: 25px;
@@ -199,12 +231,15 @@
   opacity: 0.4;
 }
 
-.signup__btn-close:hover {
+.signup__btn-close:hover,
+.login__btn-close:hover {
   opacity: 1;
 }
 
 .signup__btn-close:before,
-.signup__btn-close:after {
+.signup__btn-close:after,
+.login__btn-close:before,
+.login__btn-close:after {
   content: "";
   position: absolute;
   width: 20px;
@@ -213,10 +248,12 @@
   border-radius: 10px;
 }
 
-.signup__btn-close:before {
+.signup__btn-close:before,
+.login__btn-close:before {
   transform: rotate(45deg);
 }
 
-.signup__btn-close:after {
+.signup__btn-close:after,
+.login__btn-close:after {
   transform: rotate(-45deg);
 }
